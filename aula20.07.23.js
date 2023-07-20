@@ -10,9 +10,11 @@ if(num>0){
 }
 
 if(num%2===0){
-    console.log("numero é par")
-}else{
-    console.log("numero é negativo")
+    console.log("numero' é divisivel por 2")
+}else if(num%3===0){
+    console.log("numero é divisivel por 3")
+}else if(num%5===0){
+    console.log("numero é divisivel por 5")
 }
 
 if(nome === ""){
@@ -28,8 +30,11 @@ if(num>10){
 }
 
 if((typeof valor) == "boolean"){
-    console.log("verdade")
+    console.log("valor é booleana")
+}else if ((typeof valor) == "string"){
+    console.log("valor é uma string")
+}else if ((typeof valor) == "number"){
+    console.log("valor é numérico")
 }else{
-    valor = false;
-    console.log(valor)
+    console.log("valor é indefinido")
 }
