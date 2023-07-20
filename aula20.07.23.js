@@ -1,6 +1,6 @@
-let num = 0;
-let nome = "daniel";
-let valor = true;
+let num = 5;
+let nome = "";
+let valor = "casa";
 if(num>0){
     console.log("numero é positivo")
 }else if(num<0){
@@ -15,7 +15,7 @@ if(num%2===0){
     console.log("numero é negativo")
 }
 
-if(nome = null){
+if(nome === ""){
     console.log("string vazia")
 }else{
     console.log("string não é vazia")
@@ -24,11 +24,12 @@ if(nome = null){
 if(num>10){
     console.log("verdade")
 }else{
-    console.log("falso")
+    console.log(num * 2)
 }
 
-if(valor = Boolean){
+if((typeof valor) == "boolean"){
     console.log("verdade")
 }else{
-    console.log("falso")
+    valor = false;
+    console.log(valor)
 }
