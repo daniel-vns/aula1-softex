@@ -1,2 +1,2 @@
-# aula1-softex
-primeira aula
+# aulas-softex
+exercicios de aprendizagem
