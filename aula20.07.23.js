@@ -10,7 +10,7 @@ if(num>0){
 }
 
 if(num%2===0){
-    console.log("numero' é divisivel por 2");
+    console.log("numero é divisivel por 2");
 }else if(num%3===0){
     console.log("numero é divisivel por 3");
 }else if(num%5===0){
