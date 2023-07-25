@@ -14,6 +14,6 @@ console.log("total de pontos é", soma);
 
 if(soma_banco>21 || soma <=21 && soma>soma_banco){
     console.log("você venceu");
-}else {
+}else{
     console.log("o banco ganhou");
 }
