@@ -14,7 +14,6 @@ function calculadora(){
         op = readlineSync.questionInt("digite o numero da operacao que deseja realizar: ");
         if(op === 1){
             console.log(num1+num2);
-            
         }else if(op === 2){
             console.log(num1-num2);
         }else if(op === 3){
