@@ -5,7 +5,7 @@ console.log("2:subtração");
 console.log("3:multipicacao");
 console.log("4:divisao");
 console.log("0:sair");
-let op;
+
 function calculadora(){
     let op;
     while(op !=0){
