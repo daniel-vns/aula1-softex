@@ -1,40 +1,75 @@
 const input = require('readline-sync');
 
-const voto = {
+let x = 0;
+let y = 0;
+let z = 0;
+let branco = 0;
+let nulo = 0;
+let voto;
+
+
+const candidatos = {
     candidato_x: 889,
     candidato_y: 847,
     candidato_z: 515,
     branco: 0
 }
 
-while ( voto == true){
-    if(voto == 889){
-        candidato_x=1;
-        candidato_x++;
-        console.log("deseja votar novamente");
-    }else if(voto == 847){
-        candidato_y=1;
-        candidato_y++;
-        console.log("deseja votar novamente");
-    }else if(voto == 515){
-        candidato_z=1;
-        candidato_z++;
-        console.log("deseja votar novamente");
-    }else if(voto == 0){
-        candidato_branco=1;
-        candidato_branco++;
-        console.log("deseja votar novamente");
-    }else if(voto == String){
-        console.log("escolha um numero correto");
-    }else{
-        voto = null;
-        voto ++;
-        console.log("deseja votar novamente");
-    }
+votacao = false;
+
+while ( votacao == false){
+    try{
+        voto = input.question("digite seu voto:");
+        
+        if(isNaN(voto)){
+            throw new Error("Não é permitido textos, digite um número válido!");
+        }
+        switch (voto) {
+
+            case '889':
+                x ++;
+                break;
+
+            case '847':
+                y ++;
+                break;
+
+            case '515':
+                z ++;
+                break;
+
+            case '0':
+                branco ++;
+                break;
+
+            default:
+                nulo ++;
+                break;
+        }
+        let votar = input.question("Deseja continuar a votacao? (sim/nao): ").toLowerCase();
+        if (votar !== "sim"){
+            votacao = true;
+        }
+    }catch(error){
+        console.log("erro:", error.message);
+    }   
 }
-console.log("a quantidade de votos do candidato_x foi: ", candidato_x);   
-console.log("a quantidade de votos do candidato_y foi: ", candidato_y); 
-console.log("a quantidade de votos do candidato_z foi: ", candidato_z); 
+console.log("Resultado votação: \n");
+
+    if(x>y && x>z)
+    {
+        console.log("Vencedor: Candidato X");
+    }else if(y > x && y>z){
+        console.log("Vencedor: Candidato Y");
+    }else if(z > x && z > y){
+        console.log("Vencedor: Candidato Z");
+    }else{
+        console.log("não houve vencedor");
+    }
+
+console.log("a quantidade de votos do candidato_x foi: ", x);   
+console.log("a quantidade de votos do candidato_y foi: ", y); 
+console.log("a quantidade de votos do candidato_z foi: ", z); 
 console.log("a quantidade de votos branco foi: ", branco); 
-console.log("a quantidade de votos nulos: ", null);     
+console.log("a quantidade de votos nulos: ", nulo);     
 
