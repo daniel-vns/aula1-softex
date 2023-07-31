@@ -1,31 +1,30 @@
-const readlineSync = require('readine-sync');
-
+const readlineSync = require('readline-sync');
+console.log("escolha uma opcao abaixo para fazer uma conta com 2 numeros");
 console.log("1:soma");
 console.log("2:subtração");
-console.log("3:multipicação");
-console.log("4:divis]ao");
+console.log("3:multipicacao");
+console.log("4:divisao");
 console.log("0:sair");
-
-function calculadora(num1, num2, op){
+let op;
+function calculadora(){
+    let op;
     while(op !=0){
-        num1 = readlineSync.question("digite o primeiro número: ");
-        num2 = readlineSync.question("digite o segundo número: ");
-        op = readlineSync.question("digite o número da operação que deseja realizar: ");
+        num1 = readlineSync.questionInt("digite o primeiro numero: ");
+        num2 = readlineSync.questionInt("digite o segundo numero: ");
+        op = readlineSync.questionInt("digite o numero da operacao que deseja realizar: ");
         if(op === 1){
-            calculadora = num1+num2;
-            return calculadora;
+            console.log(num1+num2);
+            
         }else if(op === 2){
-            calculadora = num1-num2;
-            return calculadora;
+            console.log(num1-num2);
         }else if(op === 3){
-            calculadora = num1*num2;
-            return calculadora;
+            console.log(num1*num2);
         }else if(op === 4){
-            calculadora = num1/num2;
-            return calculadora;
+            console.log(num1/num2);
         }else{
-            return "essa opção não existe";
+            console.log("essa opção não existe");
     }
 }  
 }
+calculadora();
  
