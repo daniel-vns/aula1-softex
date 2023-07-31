@@ -10,7 +10,7 @@ while (ano_correto == false ){
         if (isNaN(ano)==false){
             if (ano >= 1922 && num <=2022){
                 ano_correto = true;
-                console.log("sua idade é: ", 2022 - ano);
+                console.log("seu nome é", nome, "e sua idade é", 2022 - ano);
                 break;
             }else{
                 ano_correto = false;
