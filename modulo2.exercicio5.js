@@ -5,7 +5,7 @@ let y = 0;
 let z = 0;
 let branco = 0;
 let nulo = 0;
-let voto;
+
 
 
 const candidatos = {
@@ -46,8 +46,8 @@ while ( votacao == false){
                 nulo ++;
                 break;
         }
-        let votar = input.question("Deseja continuar a votacao? (sim/nao): ").toLowerCase();
-        if (votar !== "sim"){
+        let votar = input.question("Deseja continuar a votacao? (s/n): \n").toLowerCase();
+        if (votar == "n"){
             votacao = true;
         }
     }catch(error){
@@ -58,13 +58,13 @@ console.log("Resultado votação: \n");
 
     if(x>y && x>z)
     {
-        console.log("Vencedor: Candidato X");
+        console.log("Vencedor: Candidato X \n");
     }else if(y > x && y>z){
-        console.log("Vencedor: Candidato Y");
+        console.log("Vencedor: Candidato Y \n");
     }else if(z > x && z > y){
-        console.log("Vencedor: Candidato Z");
+        console.log("Vencedor: Candidato Z \n");
     }else{
-        console.log("não houve vencedor");
+        console.log("não houve vencedor \n");
     }
 
 console.log("a quantidade de votos do candidato_x foi: ", x);   
