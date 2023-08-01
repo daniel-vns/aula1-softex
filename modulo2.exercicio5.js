@@ -70,4 +70,3 @@ console.log("a quantidade de votos do candidato_y foi: ", y);
 console.log("a quantidade de votos do candidato_z foi: ", z); 
 console.log("a quantidade de votos branco foi: ", branco); 
 console.log("a quantidade de votos nulos: ", nulo);     
-
