@@ -6,8 +6,6 @@ let z = 0;
 let branco = 0;
 let nulo = 0;
 
-
-
 const candidatos = {
     candidato_x: 889,
     candidato_y: 847,
