@@ -11,14 +11,14 @@ class listaLigada{
         this.head = null;
     }
 
-    addFirst(nome,idade){
-        const newNo = new No(nome, idade);
-        newNo.next = this.head;
-        this.head = newNo;
-    }
+    // addFirst(nome,idade){
+    //     const newNo = new No(nome, idade);
+    //     newNo.next = this.head;
+    //     this.head = newNo;
+    // }
 
     addNo(nome, idade){
-        const newNo = new No(nome, idade);
+        let newNo = new No(nome, idade);
         if(!this.head){
             this.head = new No(nome, idade);
         }else{
@@ -34,7 +34,7 @@ class listaLigada{
 let listaLig = new listaLigada();
 
 
-listaLig.addFirst("daniel", 37);
+listaLig.addNo("daniel", 37);
 listaLig.addNo("carlos", 20);
 listaLig.addNo("maria", 18);
 listaLig.addNo("aline", 42);

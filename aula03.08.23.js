@@ -182,7 +182,7 @@ let digito;
 // }
 // console.log(resultado);
 
-// for(i=0; i<=lista.length; i++){
+// for(i=0; i<lista.length; i++){
 //     console.log(lista[i]);
 // }
 
@@ -193,16 +193,11 @@ let digito;
 // }
 // console.log(soma);
 
-function primeNumber(num) {
-    for (let divisor = 2; divisor < num; divisor++) 
-    if (num % divisor == 0) return false;
-    return true;
+for(i=2;i<=50;i++){
+    for(let j = 2; j<i; j++){
+        if(i%j==0){
+            return;
+        }
+    }
+    console.log(i);
 }
-
-let determinadoNumero = 50;
-
-for ( i = 2; i < determinadoNumero; i++){
-    if (primeNumber(i)){
-        console.log(i);  
-    } 
-} 
