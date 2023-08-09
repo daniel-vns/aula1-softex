@@ -193,11 +193,15 @@ let digito;
 // }
 // console.log(soma);
 
-for(i=2;i<=50;i++){
-    for(let j = 2; j<i; j++){
-        if(i%j==0){
-            return;
-        }
-    }
-    console.log(i);
-}
+// for(i=2;i<=50;i++){
+//     let ehPrimoo = true;
+//     for(let j = 2; j<i; j++){
+//         if(i%j==0){
+//             ehPrimoo = false;
+//             break;
+//         }
+//     }
+//     if(ehPrimoo){
+//         console.log(i);
+//     }
+// }

@@ -73,20 +73,37 @@
 // }
 // maiorNumero(numeros);
 
-let texto = paralelepipedo;
-function contarVogais(texto){
-    let i;
-    for(i=0; i<texto.length;i++){
-        if(i=="a"){
-            console.log()
-        }else if (i=="e"){
-            console.log();
-        }else if (i=="i"){
-            console.log();
-        }else if (i=="o"){
-            console.log();
-        }else if(i =="u"){
-            console.log();
-        }
+// let texto = paralelepipedo;
+// function contarVogais(texto){
+//     let i;
+//     for(i=0; i<texto.length;i++){
+//         if(i=="a"){
+//             console.log()
+//         }else if (i=="e"){
+//             console.log();
+//         }else if (i=="i"){
+//             console.log();
+//         }else if (i=="o"){
+//             console.log();
+//         }else if(i =="u"){
+//             console.log();
+//         }
+//     }
+// }
+
+function verificarPrimo(num) {
+    for (var i = 2; i < num; i++) {
+      if(num % i === 0) {
+        return false;
+      }
     }
-}
+    return num > 1;  
+  }
+  console.log(verificarPrimo(1));
+
+
+
+
+
+
+
