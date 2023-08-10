@@ -91,19 +91,38 @@
 //     }
 // }
 
-function verificarPrimo(num) {
-    for (var i = 2; i < num; i++) {
-      if(num % i === 0) {
-        return false;
-      }
-    }
-    return num > 1;  
+// function verificarPrimo(num) {
+//     for (var i = 2; i < num; i++) {
+//       if(num % i === 0) {
+//         return false;
+//       }
+//     }
+//     return num > 1;  
+//   }
+//   console.log(verificarPrimo(1));
+
+// function imprimirTabuada(num){
+//   for(let i =1; i<=10; i++){
+//     let resultado = num*i;
+//     console.log(`a tabuada de ${num} x ${i} = ${resultado}`);
+//   }
+// }
+// imprimirTabuada(5);
+
+var vogais = ['a', 'e', 'i', 'o', 'u'];
+
+function contarVogais(texto){
+  let totalVogal = 0;
+  let i;
+  for (i = 0; i < texto.length; i++ ){
+    if(texto[i] == "a" || texto[i] == "e" || texto[i] == "i" || texto[i] == "o" || texto[i] == "u") {
+      totalVogal++;
+     
   }
-  console.log(verificarPrimo(1));
-
-
-
-
+  console.log(texto);
+}
+}
+contarVogais(paralelepipedo);
 
 
 
