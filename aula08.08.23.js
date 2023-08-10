@@ -122,7 +122,7 @@ function contarVogais(texto){
   console.log(texto);
 }
 }
-contarVogais(paralelepipedo);
+contarVogais("paralelepipedo");
 
 
 
