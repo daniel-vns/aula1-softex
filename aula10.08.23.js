@@ -98,21 +98,34 @@
 // }
 // console.log(maiorNumero(6,3,4));
 
-function calcularIMC(peso, altura){
-    const imc = peso / (altura*altura);
-    return imc;
-}
+// function calcularIMC(peso, altura){
+//     const imc = peso / (altura*altura);
+//     return imc;
+// }
 
-function statusIMC(peso, altura){
-    let imc = calcularIMC(peso, altura);
-    if (imc<18.5){
-        return "magro";
-    }else if((imc>=18.5) && (imc<25)){
-        return "normal";
-    }else if((imc>=25) && (imc<30)){
-        return "sobrepeso";
-    }else{
-        return "obeso";
+// function statusIMC(peso, altura){
+//     let imc = calcularIMC(peso, altura);
+//     if (imc<18.5){
+//         return "magro";
+//     }else if((imc>=18.5) && (imc<25)){
+//         return "normal";
+//     }else if((imc>=25) && (imc<30)){
+//         return "sobrepeso";
+//     }else{
+//         return "obeso";
+//     }
+// }
+// console.log(calcularIMC(50, 1.80));
+// console.log(statusIMC(50, 1.80));
+
+function contarVogal(texto){
+    const vogais = "aeiouAEIOU";
+    let i = 0;
+    for(letra of texto){
+        if(vogais.includes(letra)){
+            i++;
+        }  
     }
+    return i;
 }
-console.log(statusIMC(50, 1.80));
+console.log(contarVogal("paralelepipedo"));

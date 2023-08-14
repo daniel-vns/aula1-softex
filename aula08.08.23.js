@@ -109,20 +109,18 @@
 // }
 // imprimirTabuada(5);
 
-var vogais = ['a', 'e', 'i', 'o', 'u'];
 
-function contarVogais(texto){
-  let totalVogal = 0;
-  let i;
-  for (i = 0; i < texto.length; i++ ){
-    if(texto[i] == "a" || texto[i] == "e" || texto[i] == "i" || texto[i] == "o" || texto[i] == "u") {
-      totalVogal++;
-     
-  }
-  console.log(texto);
-}
-}
-contarVogais("paralelepipedo");
+// function contarVogais(texto){
+//   const vogais = "aeiouAEIOU";
+//   let i = 0;
+//   for (letra of texto){
+//     if(vogais.includes(letra)){
+//       i++;
+//     }
+//   }
+//   console.log(i);
+// }
+// contarVogais("paralelepipedo");
 
 
 
