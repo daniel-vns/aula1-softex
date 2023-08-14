@@ -118,14 +118,35 @@
 // console.log(calcularIMC(50, 1.80));
 // console.log(statusIMC(50, 1.80));
 
-function contarVogal(texto){
-    const vogais = "aeiouAEIOU";
-    let i = 0;
-    for(letra of texto){
-        if(vogais.includes(letra)){
-            i++;
-        }  
-    }
-    return i;
-}
-console.log(contarVogal("paralelepipedo"));
+// function contarVogal(texto){
+//     const vogais = "aeiouAEIOU";
+//     let i = 0;
+//     for(letra of texto){
+//         if(vogais.includes(letra)){
+//             i++;
+//         }  
+//     }
+//     return i;
+// }
+// console.log(contarVogal("paralelepipedo"));
+
+// function celsiusParaFahrenheit(temperatura){
+//     const fahrenheit = (temperatura * 1.8) + 32;
+//     return fahrenheit;
+// }
+// console.log(celsiusParaFahrenheit(38));
+
+// function gerarSenha(tamanho) {
+//     const caracteres =
+//       "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+//     let senha = "";
+  
+//     for (let i = 0; i < tamanho; i++) {
+//       const indice = Math.floor(Math.random() * caracteres.length);
+//       senha += caracteres.charAt(indice);
+//     }
+  
+//     return senha;
+//   }
+//   console.log(gerarSenha(5));
+
