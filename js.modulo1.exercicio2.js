@@ -1,8 +1,8 @@
 const cadastro = {
-    nome:
-    salario:
-    idade:
-    diploma:
+    nome: "daniel",
+    salario: 19000,
+    idade: 38,
+    diploma: true
 };
 
 console.log(typeof(cadastro.nome));
