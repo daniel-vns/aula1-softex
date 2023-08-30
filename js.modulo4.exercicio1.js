@@ -8,22 +8,22 @@ function banco(conta, saldo, tipoConta, agencia) {
 minhaConta = new banco("1234-x", 1000, "corrente", "recife");
 
 minhaConta.buscarsaldo = function(){
-  console.log(this.saldo);
+  return this.saldo;
 }
   
 minhaConta.deposito = function(x){
-   console.log(x + this.saldo);
+  return x + this.saldo;
 }
 
 minhaConta.saque = function(y){
-  console.log(this.saldo - y );
+  return this.saldo - y;
 }
   
 minhaConta.numeroConta = function(){
-  console.log(this.conta);
+  return this.conta;
 }
 
-minhaConta.buscarsaldo();
-minhaConta.deposito(100);
-minhaConta.saque(500);
-minhaConta.numeroConta();
+console.log(minhaConta.buscarsaldo());
+console.log(minhaConta.deposito(100));
+console.log(minhaConta.saque(500));
+console.log(minhaConta.numeroConta());
