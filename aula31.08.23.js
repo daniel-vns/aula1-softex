@@ -1,0 +1,130 @@
+// exercicio1
+
+// const readlineSync = require('readline-sync');
+
+// const nome = readlineSync.question('Qual é o seu nome ');
+// const nota1 = readlineSync.questionInt('Digite a primeira nota: ');
+// const nota2 = readlineSync.questionInt('Digite a segunda nota: ');
+// const nota3 = readlineSync.questionInt('Digite a terceira nota: ');
+
+// const media = (nota1 + nota2 + nota3)/3;
+
+// console.log(`seu nome é ${nome} e a sua média é ${media}`);
+
+// exercicio2
+
+// const readlineSync = require('readline-sync');
+
+// const ano = readlineSync.questionInt('Digite aum ano: ');
+
+// if ((ano % 400 === 0) || (ano % 4 === 0) && (ano % 100 !== 0)){
+//   console.log(`o ano ${ano} é bissexto`);
+// } else{
+//   console.log(`o ano ${ano} não é bissexto`);
+// }
+
+// exercicio3
+
+// const readlineSync = require('readline-sync');
+
+// const valor = readlineSync.questionFloat('Digite o valor do produto: ');
+// const destino = readlineSync.question('Digite o destino do produto: ').toUpperCase();
+
+// switch(destino){
+//   case "MG":
+//     console.log(`o preço final do produto é ${valor + (valor * 0.07)}`);
+//     break;
+//   case "SP":
+//     console.log(`o preço final do produto é ${valor + (valor * 0.12)}`);
+//     break;
+//   case "RJ":
+//     console.log(`o preço final do produto é ${valor + (valor * 0.15)}`);
+//     break;
+//   case "MS":
+//     console.log(`o preço final do produto é ${valor + (valor* 0.08)}`);
+//     break;
+//   default:
+//     console.log("estado não encontrado");
+// }
+
+// exercicio4
+
+// let soma = 0;
+// let cont = 0;
+
+// for (let i = 0; i <= Infinity; i++) {
+//   if (i % 2 === 0) {
+//     soma += i;
+//     cont++;
+//   }
+//   if (cont == 50) break;
+// }
+// console.log(soma);
+
+// let soma = 0;
+// let cont = 0;
+// let i = 0;
+
+// while (i <= Infinity) {
+//   if (i % 2 === 0) {
+//     soma += i;
+//     cont++;
+//   }
+//   i++;
+//   if (cont >= 50) break;
+// }
+// console.log(soma);
+
+// let soma = 0;
+// let cont = 0;
+// let i = 0;
+
+// do{
+//   if(i%2 === 0){
+//     soma+= i;
+//     cont++;
+//   }
+//   i++;
+//   if (cont >= 50) break;
+// }while (cont <Infinity);
+// console.log(soma);
+
+// exercicio5
+
+// const readlineSync = require('readline-sync');
+
+// const n = readlineSync.questionInt('Digite um número: ');
+
+// for (let i=0; i<=n; i++){
+//   if(i%2 !==0){
+//     console.log(i);
+//   }
+// }
+
+// exercicio6
+
+// const readlineSync = require('readline-sync');
+
+// const n = readlineSync.questionInt('quantos dias trabalhados? ');
+
+// let quantidadeBruta = (30 * n);
+// let quantidadeLiquida = quantidadeBruta - (quantidadeBruta * 0.08);
+// console.log(quantidadeLiquida);
+
+// exercicio7
+
+const readlineSync = require('readline-sync');
+
+const horarioInicial = readlineSync.question('digite o horario inicial no formato (hora:minuto:segundo): ');
+const duracao = readlineSync.questionInt('digite a duração do experimento em segundos: ');
+
+let horario = horarioInicial.split(":");
+
+let tempoTotal = (horario[0] * 3600 ) + (horario[1] * 60) + horario[0] + duracao;
+let novoHor = Math.floor(tempoTotal / 3600);
+let novoMin = Math.floor((tempoTotal % 3600) / 60).toPrecision();
+let novoSeg = Math.floor(tempoTotal % 3600) % 60;
+
+console.log(`${novoHor}:${novoMin}:${novoSeg}`)
+
+
