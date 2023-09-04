@@ -165,5 +165,52 @@
 
 exercicio10
 
+const readlineSync = require('readline-sync');
 
+numero = readlineSync.questionInt('digite um valor par calcular a temperatura: ');
+temperatura = readlineSync.question('digite qual o tipo de temperatura: ').toUpperCase();
+conversao = readlineSync.question('digite a conversao que deseja realizar: ').toUpperCase();
+
+if(temperatura == "CELSIUS"){
+    switch(conversao){
+        case "FAHRENHEIT":
+            console.log((numero * 1.8) + 32);
+            break;
+        case "KELVIN":
+            console.log(numero + 273.15);
+            break;
+        default:
+            console.log("digitou errado");
+            break;
+    }
+}
+
+if(temperatura == "FAHRENHEIT"){
+    switch(conversao){
+        case "CELSIUS":
+            console.log((numero - 32)/1.8);
+            break;
+        case "KELVIN":
+            console.log((numero + 459.67)/1.8);
+            break;
+        default:
+            console.log("digitou errado");
+            break;
+    }
+}
+
+
+if(temperatura == "KELVIN"){
+    switch(conversao){
+        case "CELSIUS":
+            console.log(numero - 273.15);
+            break;
+        case "FAHRENHEIT":
+            console.log((numero * 1.8) - 459.67);
+            break;
+        default:
+            console.log("digitou errado");
+            break;
+    }
+}
 
