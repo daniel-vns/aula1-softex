@@ -268,5 +268,40 @@
 // }
 // data(mes, ano);
 
-exercicio12
+// exercicio12
 
+// const readlineSync = require('readline-sync');
+
+// inicio = readlineSync.question('qual a hora de inicio (formato hora:minuto): ');
+// termino = readlineSync.question('qual a hora do termino (formato hora:minuto):');
+
+// const inicioTempo = inicio.split(":");
+// const terminoTempo = termino.split(":");
+
+// function duracao(inicioTempo, terminoTempo) {
+//     const inicioTotMinuto = inicioTempo[0] * 60 + inicioTempo[1];
+//     const terminoTotMinuto = terminoTempo[0] * 60 + terminoTempo[1];
+    
+//     if(inicioTotMinuto > terminoTotMinuto){
+//         terminoTotMinuto == terminoTotMinuto + 24 * 60;
+//     }
+
+// return terminoTotMinuto - inicioTotMinuto;
+// }
+
+// console.log(duracao(inicioTempo, terminoTempo));
+
+// exercicio13
+
+// const readlineSync = require('readline-sync');
+
+// function fibonacci(n){
+//     if(n<=1){
+//         return i;
+//     }else{
+//         return fibonacci (n-1) + fibonacci (n-2);
+//     }
+// }
+
+// let numero = readline.questionInt("digite um numero para saber a sequencia fibonacci: ");
+// console.log(`a sequencia fibonacci de ${numero} é ${fibonacci(numero)}`);
