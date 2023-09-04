@@ -163,54 +163,110 @@
 //     console.log(`a ordem crecente é: ${numero1}, ${numero2}, ${numero3}`);
 // }
 
-exercicio10
+// exercicio10
 
-const readlineSync = require('readline-sync');
+// const readlineSync = require('readline-sync');
 
-numero = readlineSync.questionInt('digite um valor par calcular a temperatura: ');
-temperatura = readlineSync.question('digite qual o tipo de temperatura: ').toUpperCase();
-conversao = readlineSync.question('digite a conversao que deseja realizar: ').toUpperCase();
+// numero = readlineSync.questionInt('digite um valor par calcular a temperatura: ');
+// temperatura = readlineSync.question('digite qual o tipo de temperatura: ').toUpperCase();
+// conversao = readlineSync.question('digite a conversao que deseja realizar: ').toUpperCase();
 
-if(temperatura == "CELSIUS"){
-    switch(conversao){
-        case "FAHRENHEIT":
-            console.log((numero * 1.8) + 32);
-            break;
-        case "KELVIN":
-            console.log(numero + 273.15);
-            break;
-        default:
-            console.log("digitou errado");
-            break;
-    }
-}
+// if(temperatura == "CELSIUS"){
+//     switch(conversao){
+//         case "FAHRENHEIT":
+//             console.log((numero * 1.8) + 32);
+//             break;
+//         case "KELVIN":
+//             console.log(numero + 273.15);
+//             break;
+//         default:
+//             console.log("digitou errado");
+//             break;
+//     }
+// }
 
-if(temperatura == "FAHRENHEIT"){
-    switch(conversao){
-        case "CELSIUS":
-            console.log((numero - 32)/1.8);
-            break;
-        case "KELVIN":
-            console.log((numero + 459.67)/1.8);
-            break;
-        default:
-            console.log("digitou errado");
-            break;
-    }
-}
+// if(temperatura == "FAHRENHEIT"){
+//     switch(conversao){
+//         case "CELSIUS":
+//             console.log((numero - 32)/1.8);
+//             break;
+//         case "KELVIN":
+//             console.log((numero + 459.67)/1.8);
+//             break;
+//         default:
+//             console.log("digitou errado");
+//             break;
+//     }
+// }
 
 
-if(temperatura == "KELVIN"){
-    switch(conversao){
-        case "CELSIUS":
-            console.log(numero - 273.15);
-            break;
-        case "FAHRENHEIT":
-            console.log((numero * 1.8) - 459.67);
-            break;
-        default:
-            console.log("digitou errado");
-            break;
-    }
-}
+// if(temperatura == "KELVIN"){
+//     switch(conversao){
+//         case "CELSIUS":
+//             console.log(numero - 273.15);
+//             break;
+//         case "FAHRENHEIT":
+//             console.log((numero * 1.8) - 459.67);
+//             break;
+//         default:
+//             console.log("digitou errado");
+//             break;
+//     }
+// }
+
+// exercicio11
+
+// const readlineSync = require('readline-sync');
+
+// mes = readlineSync.question('digite o mes: ').toUpperCase();
+// ano = readlineSync.questionInt('digite o ano: ');
+
+
+// function data(mes, ano){
+//     switch(mes){
+//         case "JANEIRO":
+//             console.log("31");
+//             break;
+//         case "FEVEREIRO":
+//             if(ano%4==0 || ano%400==0 && ano%100!==0){
+//                 console.log("29");
+//             }else{
+//                 console.log("28");
+//             }
+//             break;
+//         case "MARÇO":
+//             console.log("31");
+//             break;
+//         case "ABRIL":
+//             console.log("30");
+//             break;
+//         case "MAIO":
+//             console.log("30");
+//             break;
+//         case "JUNHO":
+//             console.log("30");
+//             break;
+//         case "JULHO":
+//             console.log("31");
+//             break;
+//         case "AGOSTO":
+//             console.log("31");
+//             break;
+//         case "SETEMBRO":
+//             console.log("30");
+//             break;
+//         case "OUTUBRO":
+//             console.log("31");
+//             break;
+//         case "NOVEMBRO":
+//             console.log("30");
+//             break;
+//         case "DEZEMBRO":
+//             console.log("31");
+//             break;
+//     }   
+// }
+// data(mes, ano);
+
+exercicio12
 
