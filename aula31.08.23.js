@@ -113,18 +113,57 @@
 
 // exercicio7
 
-const readlineSync = require('readline-sync');
+// const readlineSync = require('readline-sync');
 
-const horarioInicial = readlineSync.question('digite o horario inicial no formato (hora:minuto:segundo): ');
-const duracao = readlineSync.questionInt('digite a duração do experimento em segundos: ');
+// const horarioInicial = readlineSync.question('digite o horario inicial no formato (hora:minuto:segundo): ');
+// const duracao = readlineSync.questionInt('digite a duração do experimento em segundos: ');
 
-let horario = horarioInicial.split(":");
+// let horario = horarioInicial.split(":");
 
-let tempoTotal = (horario[0] * 3600 ) + (horario[1] * 60) + horario[0] + duracao;
-let novoHor = Math.floor(tempoTotal / 3600);
-let novoMin = Math.floor((tempoTotal % 3600) / 60).toPrecision();
-let novoSeg = Math.floor(tempoTotal % 3600) % 60;
+// let tempoTotal = (horario[0] * 3600 ) + (horario[1] * 60) + horario[0] + duracao;
+// let novoHor = Math.floor(tempoTotal / 3600);
+// let novoMin = Math.floor((tempoTotal % 3600) / 60).toPrecision();
+// let novoSeg = Math.floor(tempoTotal % 3600) % 60;
 
-console.log(`${novoHor}:${novoMin}:${novoSeg}`)
+// console.log(`${novoHor}:${novoMin}:${novoSeg}`)
+
+// exercicio8
+
+// const readlineSync = require('readline-sync');
+
+// dias = readlineSync.questionInt('quantas horas você trabalha por semana? ');
+// extra = readlineSync.questionInt('quntas horas extras você fez no ano? ')
+
+// const horasTrabahada = dias * 52;
+// const totHorasNormais = horasTrabahada * 10;
+// const tothorasExtras = extra * 15;
+// const salarioAnual = totHorasNormais + tothorasExtras;
+
+// console.log(`o total recebebido por horas normais foi R$ ${totHorasNormais} reais, o total recebido por horas extra foi R$ ${tothorasExtras} reis e o salário anual foi de R${salarioAnual} reais`);
+
+// exercicio9
+
+// const readlineSync = require('readline-sync');
+
+// numero1 = readlineSync.questionInt('digite um número: ');
+// numero2 = readlineSync.questionInt('digite outro número: ');
+// numero3 = readlineSync.questionInt('digite o último número: ');
+
+// if(numero1>=numero2 && numero1>=numero3 && numero2>=numero3){
+//     console.log(`a ordem crecente é: ${numero3}, ${numero2}, ${numero1}`);
+// }else if(numero1>=numero2 && numero1>=numero3 && numero3>=numero2){
+//     console.log(`a ordem crecente é: ${numero2}, ${numero3}, ${numero1}`);
+// }else if(numero2>=numero1 && numero2>=numero3 && numero1>=numero3){
+//     console.log(`a ordem crecente é: ${numero3}, ${numero1}, ${numero2}`);
+// }else if(numero2>=numero1 && numero2>=numero3 && numero3>=numero1){
+//     console.log(`a ordem crecente é: ${numero1}, ${numero3}, ${numero2}`);
+// }else if(numero3>=numero1 && numero3>=numero2 && numero1>=numero2){
+//     console.log(`a ordem crecente é: ${numero2}, ${numero1}, ${numero3}`);
+// }else if(numero3>=numero1 && numero3>=numero2 && numero2>=numero1){
+//     console.log(`a ordem crecente é: ${numero1}, ${numero2}, ${numero3}`);
+// }
+
+exercicio10
+
 
 
