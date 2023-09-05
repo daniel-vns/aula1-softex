@@ -270,27 +270,24 @@
 
 // exercicio12
 
-const readlineSync = require('readline-sync');
+// const readlineSync = require('readline-sync');
 
-inicio = readlineSync.question('qual a hora de inicio (formato hora:minuto): ');
-termino = readlineSync.question('qual a hora do termino (formato hora:minuto):');
+// inicio = readlineSync.question('qual a hora de inicio (formato hora:minuto): ');
+// termino = readlineSync.question('qual a hora do termino (formato hora:minuto):');
 
-inicioTempo = inicio.split(":");
-terminoTempo = termino.split(":");
-
-function duracao(inicioTempoHora, inicioTempoMin, terminoTempoHora, terminoTempoMin) {
-     
-    const inicioTotMinuto = inicioTempoHora * 60 + inicioTempoMin;
-    const terminoTotMinuto = terminoTempoHora * 60 + terminoTempoMin;
+// function duracao(inicio, termino) {
+//     inicioTempo = inicio.split(":");
+//     terminoTempo = termino.split(":");
+//     const inicioTotMinuto = (parseInt(inicioTempo[0]) * 60) + parseInt(inicioTempo[1]);
+//     const terminoTotMinuto = (parseInt(terminoTempo[0]) * 60) + parseInt(terminoTempo[1]);
+//     let duracao = terminoTotMinuto - inicioTotMinuto;
     
-    if(inicioTotMinuto > terminoTotMinuto){
-        terminoTotMinuto += terminoTotMinuto + 24 * 60;
-    }
-
-return terminoTotMinuto - inicioTotMinuto;
-}
-
-console.log(duracao(inicioTempoHora, inicioTempoMin, terminoTempoHora, terminoTempoMin));
+//     if(inicioTotMinuto > terminoTotMinuto){
+//         return ((24*60)-inicioTotMinuto) + terminoTotMinuto;
+//     }
+//     return duracao;
+// }
+// console.log(`Tempo total em minutos: ${duracao(inicio, termino)} minutos.`);
 
 // exercicio13
 
