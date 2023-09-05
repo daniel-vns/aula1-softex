@@ -270,26 +270,27 @@
 
 // exercicio12
 
-// const readlineSync = require('readline-sync');
+const readlineSync = require('readline-sync');
 
-// inicio = readlineSync.question('qual a hora de inicio (formato hora:minuto): ');
-// termino = readlineSync.question('qual a hora do termino (formato hora:minuto):');
+inicio = readlineSync.question('qual a hora de inicio (formato hora:minuto): ');
+termino = readlineSync.question('qual a hora do termino (formato hora:minuto):');
 
-// const inicioTempo = inicio.split(":");
-// const terminoTempo = termino.split(":");
+inicioTempo = inicio.split(":");
+terminoTempo = termino.split(":");
 
-// function duracao(inicioTempo, terminoTempo) {
-//     const inicioTotMinuto = inicioTempo[0] * 60 + inicioTempo[1];
-//     const terminoTotMinuto = terminoTempo[0] * 60 + terminoTempo[1];
+function duracao(inicioTempoHora, inicioTempoMin, terminoTempoHora, terminoTempoMin) {
+     
+    const inicioTotMinuto = inicioTempoHora * 60 + inicioTempoMin;
+    const terminoTotMinuto = terminoTempoHora * 60 + terminoTempoMin;
     
-//     if(inicioTotMinuto > terminoTotMinuto){
-//         terminoTotMinuto == terminoTotMinuto + 24 * 60;
-//     }
+    if(inicioTotMinuto > terminoTotMinuto){
+        terminoTotMinuto += terminoTotMinuto + 24 * 60;
+    }
 
-// return terminoTotMinuto - inicioTotMinuto;
-// }
+return terminoTotMinuto - inicioTotMinuto;
+}
 
-// console.log(duracao(inicioTempo, terminoTempo));
+console.log(duracao(inicioTempoHora, inicioTempoMin, terminoTempoHora, terminoTempoMin));
 
 // exercicio13
 
